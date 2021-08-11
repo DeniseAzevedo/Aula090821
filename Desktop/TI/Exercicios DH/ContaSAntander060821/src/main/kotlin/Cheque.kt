@@ -1,0 +1,1 @@
+open class Cheque(var valor: Int, var bancoEmissor: String, var data: String)
