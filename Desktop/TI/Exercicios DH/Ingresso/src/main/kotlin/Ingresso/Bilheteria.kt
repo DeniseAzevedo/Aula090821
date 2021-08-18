@@ -32,9 +32,9 @@ fun comprarIngresso(){
     var retornoInicial = scanner.nextInt()
 
     if(retornoInicial == 1){
-        IngressoPadrão(padrão).imprimeValor(padrão)
+        IngressoPadrão(padrão).imprimeValor()
     } else if(retornoInicial == 2){
-        IngressoVip(padrão, adicional).imprimeValor(padrão)
+        IngressoVip(padrão, adicional).imprimeValor()
     } else { // Se opção diferente de 1 ou 2 escreve Opção inválida e torna a chamar a função comprarIngresso
         println("$red Opção inválida! $reset")
         comprarIngresso()
