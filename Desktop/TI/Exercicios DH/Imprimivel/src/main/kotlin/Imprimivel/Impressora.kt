@@ -3,13 +3,15 @@ package Imprimivel
 import java.awt.List
 
 class Impressora() {
-    var listaImprimivel = mutableListOf<String>()
+    var listaImprimivel = mutableListOf<Imprimivel>()
 
-    fun adiciona(elemento: String) {
+    fun adiciona(elemento: Imprimivel) {
         listaImprimivel.add(elemento)
     }
 
     fun imprime() {
-            println(listaImprimivel)
+        for (i in listaImprimivel) {
+            println(i.imprimir())
         }
+    }
 }
